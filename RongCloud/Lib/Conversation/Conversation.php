@@ -87,7 +87,7 @@ class Conversation
      * @return array
      */
     public function unmute(array $Conversation=[]){
-        $conf = $this->conf['mute'];
+        $conf = $this->conf['unmute'];
         $error = (new Utils())->check([
             'api'=> $conf,
             'model'=> 'conversation',
@@ -119,7 +119,7 @@ class Conversation
      * @return array
      */
     public function get(array $Conversation=[]){
-        $conf = $this->conf['mute'];
+        $conf = $this->conf['get'];
         $error = (new Utils())->check([
             'api'=> $conf,
             'model'=> 'conversation',
